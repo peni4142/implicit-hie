@@ -1,8 +1,20 @@
 # implicit-hie
+
+## Get Started for the first
+with cabal
 ```bash
-cd your-stack-or-cabal-package
+cd [cabal-package]
+cabal install implicit-hie
 gen-hie > hie.yaml
 ```
+
+with stack
+```bash
+cd [stack-package]
+stack install implicit-hie
+gen-hie > hie.yaml
+```
+
 `gen-hie` should be run the root of a cabal or stack project.
 The config type (cabal or stack) is determined by the existence of
 `dist-newstyle`, `.stack-work`, `stack.yaml`, if none are found the default is cabal.
